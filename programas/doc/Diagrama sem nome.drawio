@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="hbFSbyL9EFZUC36TkhMK">
+    <mxGraphModel dx="1029" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=40;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;br&gt;&lt;i&gt;Veículo&lt;/i&gt;" vertex="1">
+          <mxGeometry height="388" width="340" x="330" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v_attr" parent="v" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="- placa: String&lt;br&gt;- marca: String&lt;br&gt;- modelo: String&lt;br&gt;- ano: int&lt;br&gt;# valorBase: double" vertex="1">
+          <mxGeometry height="98" width="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v_line" parent="v" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="v_met" parent="v" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="+ getPlaca(): String&lt;br&gt;+ setPlaca(placa: String): void&lt;br&gt;+ getMarca(): String&lt;br&gt;+ setMarca(marca: String): void&lt;br&gt;+ getModelo(): String&lt;br&gt;+ setModelo(modelo: String): void&lt;br&gt;+ getAno(): int&lt;br&gt;+ setAno(ano: int): void&lt;br&gt;+ getValorBase(): double&lt;br&gt;+ setValorBase(valorBase: double): void&lt;br&gt;+ getInfo(): String&lt;br&gt;&lt;i&gt;+ calcularImposto(): double&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ calcularManutencao(): double&lt;/i&gt;" vertex="1">
+          <mxGeometry height="242" width="340" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="c" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Carro" vertex="1">
+          <mxGeometry height="140" width="300" x="20" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="c_attr" parent="c" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="- numPortas: int" vertex="1">
+          <mxGeometry height="26" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c_line" parent="c" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="c_met" parent="c" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="+ getNumPortas(): int&lt;br&gt;+ setNumPortas(numPortas: int): void&lt;br&gt;+ calcularImposto(): double&lt;br&gt;+ calcularManutencao(): double" vertex="1">
+          <mxGeometry height="80" width="300" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Moto" vertex="1">
+          <mxGeometry height="140" width="300" x="350" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="m_attr" parent="m" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="- cilindradas: int" vertex="1">
+          <mxGeometry height="26" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="m_line" parent="m" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="m_met" parent="m" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="+ getCilindradas(): int&lt;br&gt;+ setCilindradas(cilindradas: int): void&lt;br&gt;+ calcularImposto(): double&lt;br&gt;+ calcularManutencao(): double" vertex="1">
+          <mxGeometry height="80" width="300" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Caminhao" vertex="1">
+          <mxGeometry height="194" width="300" x="680" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="k_attr" parent="k" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="- capacidadeCarga: double&lt;br&gt;- numEixos: int" vertex="1">
+          <mxGeometry height="44" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k_line" parent="k" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="k_met" parent="k" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;html=1;" value="+ getCapacidadeCarga(): double&lt;br&gt;+ setCapacidadeCarga(capacidadeCarga: double): void&lt;br&gt;+ getNumEixos(): int&lt;br&gt;+ setNumEixos(numEixos: int): void&lt;br&gt;+ calcularImposto(): double&lt;br&gt;+ calcularManutencao(): double" vertex="1">
+          <mxGeometry height="116" width="300" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="v">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="m" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="v">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="k" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="v">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
