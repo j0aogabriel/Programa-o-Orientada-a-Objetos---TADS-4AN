@@ -1,0 +1,14 @@
+use bdunivel;
+
+DROP TABLE IF EXISTS usuarios;
+DROP TABLE IF EXISTS produtos;
+
+CREATE TABLE usuarios (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(50) NOT NULL UNIQUE,
+    senha VARCHAR(64) NOT NULL, 
+    data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
+    tipo VARCHAR(1) CHECK (tipo IN ('U', 'A')) DEFAULT 'U';
+    ativo VARCHAR(1) CHECK (ativo IN ('T', 'F')) DEFAULT 'T';
+    email VARCHAR(50)
+);
